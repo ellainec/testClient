@@ -8,7 +8,7 @@
 #include <string.h>
 
 
-#define BUF_SIZE 1024
+#define BUF_SIZE 7000
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     hints.ai_flags = 0;
     hints.ai_protocol = 0;          /* Any protocol */
 
-    s = getaddrinfo("127.0.0.1", "8080", &hints, &result);
+    s = getaddrinfo("192.168.0.9", "8080", &hints, &result);
     if (s != 0) {
         fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(s));
         exit(EXIT_FAILURE);
@@ -40,6 +40,11 @@ int main(int argc, char *argv[])
        Try each address until we successfully connect(2).
        If socket(2) (or connect(2)) fails, we (close the socket
        and) try the next address. */
+    for(int x = 0; x <20; x++) {
+        if (fork()==0) {
+            break;
+        }
+    }
 
     for (rp = result; rp != NULL; rp = rp->ai_next) {
         sfd = socket(rp->ai_family, rp->ai_socktype,
@@ -67,8 +72,8 @@ int main(int argc, char *argv[])
         perror("read");
         exit(EXIT_FAILURE);
     }
-    printf("port number received: %s", buf);
-    if ((he=gethostbyname("127.0.0.1")) == NULL) {  /* get the host info */
+    printf("port number received: %s \n", buf);
+    if ((he=gethostbyname("192.168.0.9")) == NULL) {  /* get the host info */
         herror("gethostbyname");
         exit(1);
     }
@@ -87,7 +92,7 @@ int main(int argc, char *argv[])
         if(sendto(udpSocket, buf, sizeof(buf), 0, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) == -1) {
             perror("write");
         }
-        usleep(10000);
+        usleep(15000);
         //printf("sent %d", i);
     }
 
