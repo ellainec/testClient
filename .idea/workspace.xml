@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86c85749-b91c-425a-a973-d86cafe15554" name="Default Changelist" comment="" />
+    <list default="true" id="86c85749-b91c-425a-a973-d86cafe15554" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +24,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YY74pCmxdTrEkcH9PzYNxAAg7D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +58,8 @@
       <workItem from="1583107487436" duration="5440000" />
       <workItem from="1583125159709" duration="9000" />
       <workItem from="1583125313027" duration="4000" />
+      <workItem from="1583164314018" duration="28000" />
+      <workItem from="1583164437966" duration="67000" />
     </task>
     <servers />
   </component>
@@ -63,10 +71,11 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="426" height="568" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583123777913" />
-    <state x="2663" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583125166654">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="784" y="317" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583164339352">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2663" y="297" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1583125166654" />
+    <state x="784" y="317" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583164339352" />
     <state width="1807" height="314" key="GridCell.Tab.0.bottom" timestamp="1583125130710">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -107,10 +116,11 @@
     </state>
     <state width="1874" height="344" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1583110063903" />
     <state width="1807" height="314" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583125130710" />
-    <state x="2574" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1583125159825">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="698" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1583164314109">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2574" y="303" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1583125159825" />
+    <state x="698" y="322" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583164314109" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

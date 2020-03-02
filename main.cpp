@@ -87,6 +87,7 @@ int main(int argc, char *argv[])
         if(sendto(udpSocket, buf, sizeof(buf), 0, (struct sockaddr *)&serverAddr, sizeof(serverAddr)) == -1) {
             perror("write");
         }
+        usleep(10000);
         //printf("sent %d", i);
     }
 
